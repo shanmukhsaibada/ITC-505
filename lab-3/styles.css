@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype'),
+         url('fonts/Lobster-Regular.woff') format('woff');
+}
+
+body {
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 Lab 3</title>
+    <style>
+        @font-face {
+            font-family: 'Jacquard_12';
+            src: url('fonts/Jacquard_12.woff2') format('woff2'),
+                 url('fonts/Jacquard_12.woff') format('woff'),
+                 url('fonts/Jacquard_12.ttf') format('truetype'),
+                 url('fonts/Jacquard_12.eot') format('embedded-opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Jacquard_12', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>ITC505 Lab 3: Custom Font Delivery</h1>
+    <p>
+        This page demonstrates how to deliver a custom font to a client using the <code>@font-face</code> rule in CSS. The font used here is "Jacquard_12," which is not commonly found on most computers.
+    </p>
+    <p>
+        The <code>@font-face</code> rule allows us to specify custom fonts that are stored on the server. These fonts are then downloaded and used by the client's browser when rendering the page. The steps to achieve this are as follows:
+    </p>
+    <p>To set custom font first we need to download the custom font in my case it is freakshow font and after downloading it it will be saved in zip folder and after that we need to unzip that and add all the files in the code by adding a new folder fonts in it after adding it we should add urls in the code by @font-face in css </p>
+   
+   <p>we also have another process where we can directly go to the fonts and download the embedded code and paste it in the code</p>
+    <ol>
+        <li>Download the desired font in various formats (woff, woff2, ttf, eot).</li>
+        <li>Upload the font files to your server, typically in a directory like <code>/fonts/</code>.</li>
+        <li>Use the <code>@font-face</code> rule in your CSS to define the font and specify the URLs to the font files.</li>
+        <li>Apply the custom font to your HTML elements using the <code>font-family</code> property in CSS.</li>
+    </ol>
+</body>
+<footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</html>
