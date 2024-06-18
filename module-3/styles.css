@@ -1,0 +1,257 @@
+To add transitions to your portfolio website, you can apply CSS transitions to various elements. This can enhance the visual appeal and create a smoother user experience. Below is the updated HTML and CSS with transitions added to various elements, including the navigation links, buttons, and images.
+
+### Updated HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Welcome to My Portfolio</h1>
+        <img src="C:\Users\91996\Desktop\portfolio website\sb3869_Arvayo_3.jpg" alt="Your Photo" class="profile-photo">
+        <p>Hello! I'm Shanmukh Sai Bada, a web developer with a passion for creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello, I'm Shanmukh Sai Bada</p>
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>Core Java</li>
+            <li>Java 8</li>
+            <li>Spring Boot</li>
+            <li>Microservices</li>
+            <li>Hibernate</li>
+            <li>MySQL</li>
+            <li>HTML5 & CSS3</li>
+            <li>Data Structures & Algorithms</li>
+        </ul>
+        <div class="photo-gallery">
+            <img src="C:\Users\91996\Desktop\portfolio website\images\IMG-20240610-WA0013.jpg" alt="Project 1">
+            <img src="C:\Users\91996\Desktop\portfolio website\images\IMG-20240610-WA0013.jpg" alt="Project 2">
+            <img src="C:\Users\91996\Desktop\portfolio website\images\IMG-20240610-WA0013.jpg" alt="Project 3">
+            <!-- Add more project images as needed -->
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Student Career Prediction System</h3>
+                <p>This project uses machine learning algorithms to predict the future career paths of students based on their academic performance and other relevant factors.</p>
+                <ul>
+                    <li>Implemented various algorithms like Decision Trees, Random Forest, and Neural Networks.</li>
+                    <li>Used data from academic records, extracurricular activities, and standardized test scores.</li>
+                    <li>Developed a web interface for users to input their data and get career predictions. <a href="http://example.com/demo">Demo</a></li>
+                    <li>Achieved an accuracy rate of 85% on test data. <a href="http://example.com/repo">Source Code</a></li>
+                </ul>
+                <a href="http://example.com/details" class="btn">Learn More</a>
+            </div>
+
+            <div class="project">
+                <h3>Ecommerce website</h3>
+                <p>An e-commerce website that allows users to browse products, add items to a cart, and complete purchases.</p>
+                <ul>
+                    <li>Front-End: HTML, CSS, JavaScript</li>
+                    <li>Back-End: PHP, Python, Ruby</li>
+                    <li>Database: SQL</li>
+                    <li>Developed secure checkout process with payment integration.</li>
+                    <li>Admin dashboard for managing products, orders, and customer information. <a href="http://example.com/demo">Demo</a></li>
+                    <li>Source Code available on GitHub. <a href="http://example.com/repo">Source Code</a></li>
+                </ul>
+                <a href="http://example.com/details" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-social-media" class="section">
+        <h2>Social Media</h2>
+        <a href="https://www.linkedin.com/in/shanmukha-sai-bada-548486233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn">LinkedIn</a>
+        <a href="https://github.com/shanmukhsaibada" class="btn">GitHub</a>
+        <a href="https://www.instagram.com/__alpha__7?igsh=enJjemIzaDB4bTlq" class="btn">Instagram</a>
+    </section>
+
+    <footer>
+        <h2>Contact Me</h2>
+        <p>You can reach me at sb3869@nau.edu</p>
+        <p>Phone: 928 667 7788</p>
+        <p>&copy; 2024 Shanmukh Sai Bada</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### Updated CSS (styles.css)
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+.section {
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.skills li:hover {
+    background-color: #ddd;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.projects .project {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.projects .project:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.projects .btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#my-social-media .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#my-social-media .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text
