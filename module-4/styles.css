@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+svg {
+    width: 80%;
+    height: 80%;
+}
+
+#ball {
+    animation: bounce 2s infinite, colorChange 4s infinite;
+}
+
+#star {
+    animation: rotate 4s linear infinite;
+    transform-origin: center;
+}
+
+#pulse {
+    animation: pulse 2s infinite;
+}
+
+#wave {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear infinite, colorWave 5s linear infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        cy: 50;
+    }
+    50% {
+        cy: 150;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        fill: red;
+    }
+    25% {
+        fill: yellow;
+    }
+    50% {
+        fill: green;
+    }
+    75% {
+        fill: blue;
+    }
+    100% {
+        fill: red;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        r: 20;
+        fill: blue;
+    }
+    50% {
+        r: 30;
+        fill: lightblue;
+    }
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes colorWave {
+    0%, 100% {
+        stroke: purple;
+    }
+    50% {
+        stroke: pink;
+    }
+}
