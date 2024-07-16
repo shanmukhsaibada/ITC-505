@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Blog</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="content">
+            <h2>Blog Posts</h2>
+            <div id="posts"></div>
+            <h2>Add New Post</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Title" required>
+                <textarea id="postContent" placeholder="Content" required></textarea>
+                <button type="submit">Add Post</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Created by Shanmukh sai. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
