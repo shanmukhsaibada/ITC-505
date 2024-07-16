@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout with JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Holy Grail Layout</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="content">
+            <h2>Bubble Sort Demo</h2>
+            <p>Enter numbers separated by commas:</p>
+            <input type="text" id="numbers" placeholder="e.g. 5, 3, 8, 4">
+            <button onclick="sortNumbers()">Sort</button>
+            <p>Sorted numbers:</p>
+            <p id="result"></p>
+        </div>
+    </main>
+    <aside class="advertisement">
+        <a href="https://www.amazon.com/Fujifilm-Instax-Mini-Instant-Camera/dp/B0BWNYPCT1/ref=sr_1_3?crid=1UAD5AU1QAB7O&dib=eyJ2IjoiMSJ9.77GJDkIaw2c2JoOSTsV42UnjwzluVk8k6kW5J-kp8gKtfrM8bE6Mpjdy-GxvLBrWBz0YEY8Pi0TwNZIJ_yeC18F5KThTaa9uk_Z8QfWkV3Aw8__skA9ZNNCk81IcfolmngksbpyThATeRdgoYFzYROj8rIqJ7mKB4GDK8vuWxt4vhPY-DXwBGd6NcT-bvjyBsCdR9IEnyOi1ANP7P5k6uuO8_nTSipyWpo9M1A4WqpU.3u7CEKOkiR6gQIQdjYrc7mSPxryu6S_uqCLOSkohmjs&dib_tag=se&keywords=instacam&qid=1720925620&sprefix=instacam%2Caps%2C595&sr=8-3&th=1" target="_blank">
+            <img src="product.jpg" alt="Advertisement">
+            <p>Fujifilm Instax Mini 12 Instant Camera - Lilac Purple</p>
+        </a>
+    </aside>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <p>
+            This page demonstrates a Holy Grail layout with a bubble sort algorithm implemented in JavaScript. This page demonstrates a Holy Grail layout with a bubble sort algorithm implemented in JavaScript. The user can input a series of numbers separated by commas, and upon clicking the "Sort" button, the numbers will be sorted and displayed in ascending order. The sorting is done using the bubble sort algorithm, which is a simple comparison-based algorithm. One challenge was ensuring the input was correctly parsed into an array of numbers, which was addressed by using the `split` and `map` methods in JavaScript.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
