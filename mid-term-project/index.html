@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Own Adventure</h1>
+    </header>
+    <main>
+        <div id="story"></div>
+        <div id="choices"></div>
+        <div id="image"></div>
+    </main>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <div id="addendum">
+            <h2>Project Reflection</h2>
+            <h3>Process and Creative Choices</h3>
+            <p><strong>Story Development:</strong> The narrative was carefully planned to offer a rich and engaging experience with at least eight different endings. Each path was designed to be unique, providing a sense of discovery and adventure. Characters and plot twists were incorporated to maintain interest and encourage replayability. The choices were structured to impact the storyline significantly, making each decision feel meaningful.</p>
+            <p><strong>Design and Layout:</strong> The visual design aimed to complement the adventure theme. A cohesive color scheme and font selection were used to create an immersive experience. Images were chosen to enhance the storytelling, with a unique image for each ending to provide visual closure to the story paths. The layout was designed to be clean and intuitive, ensuring easy navigation through the story. CSS was used extensively to style the elements, creating a visually appealing and user-friendly interface.</p>
+            <p><strong>Technical Implementation:</strong> The project was built using HTML, CSS, and JavaScript. HTML provided the structure, CSS handled the styling, and JavaScript managed the interactivity. Story stages were represented as objects in JavaScript, each containing the text, choices, consequences, and images. This modular approach made the code easier to manage and extend. Functions were written to start/restart the game, update the page with the current story stage, and handle game endings. Event listeners were used to respond to user choices and progress the story.</p>
+            <h3>Challenges and Solutions</h3>
+            <p><strong>Ensuring Cross-Browser Compatibility:</strong> Different browsers may interpret code slightly differently, leading to inconsistencies. Regular testing on multiple browsers (Chrome, Firefox, Safari, Edge) and using polyfills for unsupported features helped achieve consistent behavior across platforms.</p>
+            <p><strong>Optimizing Performance:</strong> Large images and resources can slow down the webpage loading time. Images were compressed and CSS and JavaScript files were minified. This significantly improved loading times and overall performance.</p>
+            <p><strong>Handling Complex Game Logic:</strong> Managing the different story paths and ensuring smooth transitions can be complex. The story was broken down into smaller, manageable objects, with clear relationships between choices and consequences. This modular approach made the code easier to debug and maintain.</p>
+            <p><strong>Enhancing User Experience:</strong> Ensuring the game is intuitive and enjoyable for users. Feedback from a small group of users was gathered and incorporated into the design. Clear instructions and an intuitive layout were prioritized.</p>
+            <h3>Insights Gained</h3>
+            <p><strong>Importance of Planning:</strong> Detailed planning of the story flow and structure was crucial. Using diagrams and flowcharts to visualize the story paths helped in organizing the content and ensuring all endings were reachable.</p>
+            <p><strong>Value of User Feedback:</strong> Testing the game with real users provided valuable insights into usability and engagement. User feedback highlighted areas for improvement and helped refine the final product.</p>
+            <p><strong>Accessibility:</strong> Implementing accessibility features not only widened the audience but also improved the overall user experience. Tools like WAVE and Lighthouse were instrumental in identifying and addressing accessibility issues.</p>
+            <p><strong>Collaboration and Continuous Improvement:</strong> Sharing the project with peers and seeking feedback throughout the development process was beneficial. Continuous improvement based on feedback and testing led to a polished final product.</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
