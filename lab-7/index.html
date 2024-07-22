@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mad Libs Game</h1>
+    <form id="madLibForm">
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun" required>
+        <br>
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" name="verb" required>
+        <br>
+        <label for="adjective">Adjective:</label>
+        <input type="text" id="adjective" name="adjective" required>
+        <br>
+        <label for="pluralNoun">Plural Noun:</label>
+        <input type="text" id="pluralNoun" name="pluralNoun" required>
+        <br>
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="madLibResult"></div>
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <div><strong>Addendum:</strong>
+            
+                <li><strong>HTML Structure:</strong> The form includes input fields for a noun, verb, adjective, plural noun, and place, each with appropriate labels and validation.</li>
+                <li><strong>Input Sanitization:</strong> The <code>sanitizeInput</code> function prevents XSS attacks by converting user input to plain text before processing.</li>
+                <li><strong>JavaScript Handling:</strong> The form submission is handled by JavaScript, which validates the inputs and dynamically creates a Mad Libs sentence. This ensures a smooth user experience without page reloads.</li>
+                <li><strong>Dynamic Content:</strong> The result is displayed on the same page using the <code>innerHTML</code> property, allowing for a seamless interaction.</li>
+                <li><strong>Security:</strong> Input sanitization and validation are key aspects to prevent security vulnerabilities such as XSS attacks.</li>
+            
+        </div>     
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
