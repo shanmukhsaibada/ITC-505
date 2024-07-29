@@ -1,0 +1,59 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game board styling */
+#game-board {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Light is white initially (on) */
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.light.is-off {
+    background-color: black; /* Light turns black when toggled (off) */
+}
+
+/* Info section styling */
+#info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    background-color: #e90e0e; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}

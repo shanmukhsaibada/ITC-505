@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="info">
+        <p>Moves: <span id="moveCount">0</span></p>
+        <p>Time: <span id="timer">00:00</span></p>
+        <p>Target: <span id="targetCount">0</span></p>
+        <button id="hintButton">Hint</button>
+        <button id="newGameButton">New Game</button>
+    </div>
+    <div id="game-board"></div>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+
+    <!-- Addendum Section -->
+    <div id="addendum">
+        <h2>Addendum</h2>
+        <p><strong>Process and Creative Choices:</strong></p>
+        <p>The game "Lights Out" was simplified to include essential gameplay mechanics and additional features such as move count, time tracking, and a hint system. The board configuration is randomized and ensured to be solvable by toggling lights starting from an all-white board. This approach avoids random unsolvable configurations and simplifies the initial setup.</p>
+        <p><strong>Challenges Faced:</strong></p>
+        <p>One major challenge was ensuring the board's solvability while keeping the game simple. This was addressed by simulating user interactions to generate a solvable puzzle. Additionally, managing the hint system and ensuring it worked correctly without causing errors was crucial.</p>
+        <p><strong>Insights Gained:</strong></p>
+        <p>Implementing a timer and move counter added an additional layer of engagement to the game. This helps players track their performance and provides feedback on their progress. The inclusion of a new game button allows players to start afresh easily, enhancing the overall user experience.</p>
+        <p><strong>Future Improvements:</strong></p>
+        <p>Adding features like night mode and light mode could further enhance user experience. These options cater to different lighting conditions and user preferences, making the website more versatile. Improved accessibility features and performance optimization could also provide a better overall experience for users.</p>
+        <p>
+            Difficulty Levels: Introducing varying levels of difficulty to cater to both beginners and experienced players.
+            Leaderboard: Implementing a leaderboard to track and display high scores and fastest completion times, encouraging competition and replayability.
+            Customization Options: Allowing users to customize the appearance of the game board or light colors for a more personalized experience.
+            Tutorial Mode: Adding a tutorial mode to help new players understand the game mechanics and strategies.</p>
+    </div>
+</body>
+</html>
